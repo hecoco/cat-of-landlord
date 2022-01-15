@@ -10,6 +10,52 @@
 </head>
 
 <body>
+    <div class="heart">
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="bottom"></div>
+    </div>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .heart {
+            display: inline-block;
+            margin: 200px;
+            transition: all 1s;
+        }
+
+        .heart:hover {
+            transform: scale(1.2);
+        }
+
+        .heart>div {
+            width: 100px;
+            height: 100px;
+            background: rgb(51, 255, 0);
+        }
+
+        .left {
+            position: absolute;
+            transform: rotate(45deg) translateX(-60px);
+            border-radius: 50% 0 0 50%;
+        }
+
+        .right {
+            position: absolute;
+            transform: rotate(45deg) translateY(-60px);
+            border-radius: 50% 50% 0 0;
+        }
+
+        .bottom {
+            transform: rotate(45deg);
+        }
+    </style>
+
 
 </body>
 
